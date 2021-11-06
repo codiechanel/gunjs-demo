@@ -106,6 +106,7 @@ const App: Component = () => {
                   onClick={() => {
                     let tmp = gun.get(key);
 
+                    // @ts-ignore
                     myList.unset(tmp).then((ack) => {
                       console.log("unset ", ack);
                     });
